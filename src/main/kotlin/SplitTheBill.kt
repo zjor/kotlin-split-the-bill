@@ -13,8 +13,14 @@ fun main(args: Array<String>) {
     Alex gives 30.0 to Zjor
     Alex pays 30.0
 
+    Oleg split 10.0 between Alex and Eugen on "12/04/2018" at "Cafe Mood"
+
+    Person.transactions.forEach{ println(it) }
+
 
     Person.getBalances().forEach{ println("${it.key}: \t ${it.value}") }
 
     Person.splitTheBill().forEach { println(it) }
+
+
 }
